@@ -1,14 +1,13 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "sliders",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
-    "description": "Organize your content into categories"
+    "singularName": "slider",
+    "pluralName": "sliders",
+    "displayName": "Slider"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -16,7 +15,7 @@
       "type": "string",
       "required": true
     },
-    "Icon": {
+    "Image": {
       "allowedTypes": [
         "images",
         "files",

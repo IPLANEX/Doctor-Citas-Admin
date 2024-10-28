@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "horarios",
+  "info": {
+    "singularName": "horario",
+    "pluralName": "horarios",
+    "displayName": "Horario",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Fecha": {
+      "type": "date"
+    },
+    "Hora_Inicio": {
+      "type": "time"
+    },
+    "Hora_Fin": {
+      "type": "time"
+    },
+    "Estado": {
+      "type": "enumeration",
+      "enum": [
+        "disponible",
+        "pendiente",
+        "ocupado"
+      ]
+    },
+    "doctor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::doctor.doctor"
+    }
+  }
+}

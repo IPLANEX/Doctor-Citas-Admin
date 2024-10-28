@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "singularName": "doctor",
+    "pluralName": "doctors",
+    "displayName": "Doctor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Estado": {
+      "type": "boolean"
+    },
+    "Calificacion": {
+      "type": "integer"
+    },
+    "Especialidad": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
